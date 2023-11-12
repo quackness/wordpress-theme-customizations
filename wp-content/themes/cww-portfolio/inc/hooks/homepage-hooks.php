@@ -360,7 +360,7 @@ if (!function_exists('cww_portfolio_gallery')):
 			</div>
 			<div class="project">
 				<div class="project-text">
-					<p>WikiMaps!!!!!</p>
+					<p>WikiMaps!!!!!!</p>
 					<p>
 						The app uses open-source JavaScript library Leaflet for interactive maps. Interactive resources to create maps
 						with markers pointing to locations based on the longitude and latitude.
