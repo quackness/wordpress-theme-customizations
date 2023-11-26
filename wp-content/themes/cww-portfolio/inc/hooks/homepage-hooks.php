@@ -323,16 +323,16 @@ if (!function_exists('cww_portfolio_gallery')):
 			</div>
 			<div class="project">
 				<div class="project-text">
-					<p>ToolSwap</p>
+					<p class="project-title">ToolSwap</p>
 					<p>
 						Web app for scheduling a neighbourhood tool sharing! The app
 						is using React calendar for logged-in users to schedule the
 						rental. The logged in user has a full control over their
 						reservations, can add items to the databse and manage them. The
-						web site has a search bar and dmin section to control the tool flow,
+						web site has a search bar and admin section to control the tool flow,
 						categories and groups.
 					</p>
-					<p>Stack: PostgreSQL, Express, React, Node </p>
+					<p><b>Stack:</b> PostgreSQL, Express, React, Node </p>
 				</div>
 				<div class="video">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/Tk4Sc80ZBsE?si=A_THCPljBM93_PUF"
@@ -343,13 +343,13 @@ if (!function_exists('cww_portfolio_gallery')):
 			</div>
 			<div class="project">
 				<div class="project-text">
-					<p>Scheduler</p>
+					<p class="project-title">Scheduler</p>
 					<p>
 						Schedule, edit and delete technical interviews. The calendar side-bar updates the amount of remaining spots
 						automatically based on the bookings. The app has thoroughly tested with multiple testing frameworks and deployed
 						with Heroku and Netlify.
 					</p>
-					<p>Stack: Express, SQL, Node, React, Cypress, Jest, StoryBook</p>
+					<p><b>Stack:</b> Express, SQL, Node, React, Cypress, Jest, StoryBook</p>
 				</div>
 				<div class="video">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/0F8iJJ1J-OQ?si=_pK7TOxxLD8ZTKhf"
@@ -360,13 +360,13 @@ if (!function_exists('cww_portfolio_gallery')):
 			</div>
 			<div class="project">
 				<div class="project-text">
-					<p>WikiMaps!!!!!!</p>
+					<p class="project-title">WikiMaps</p>
 					<p>
 						The app uses open-source JavaScript library Leaflet for interactive maps. Interactive resources to create maps
 						with markers pointing to locations based on the longitude and latitude.
 						User's profile holds information on the maps created by a user and pins they have added to any map.
 					</p>
-					<p>Stack: Express, Node.js, PostgreSQL, HTML, CSS</p>
+					<p><b>Stack:</b> Express, Node.js, PostgreSQL, HTML, CSS</p>
 				</div>
 				<div class="video">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/TuXmS_Ym7js?si=rLdY5HLPHM0T_vs6"
@@ -377,14 +377,14 @@ if (!function_exists('cww_portfolio_gallery')):
 			</div>
 			<div class="project">
 				<div class="project-text">
-					<p>Tweeter</p>
+					<p class="project-title">Tweeter</p>
 					<p>
 						Tweeter is a single-page Twitter clone, it uses Ajax to provide a real time update the page with user submitted
 						tweets. The page events are handled with jQuery; the design is powered with HTML + CSS with an emphasis on
 						mobile
 						responsiveness.
 					</p>
-					<p>Stack: AJAX, jQuery, HTML+CSS, EJS, Express</p>
+					<p><b>Stack:</b> AJAX, jQuery, HTML+CSS, EJS, Express</p>
 				</div>
 				<div class="video">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/-VABYbK_jPI?si=SCyOiSXk-Fh5mrsg"
@@ -392,6 +392,7 @@ if (!function_exists('cww_portfolio_gallery')):
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						allowfullscreen></iframe>
 				</div>
+			</div>
 			</div>
 		</section>
 
