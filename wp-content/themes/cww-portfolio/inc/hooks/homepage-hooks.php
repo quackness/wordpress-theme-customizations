@@ -323,14 +323,11 @@ if (!function_exists('cww_portfolio_gallery')):
 			</div>
 			<div class="project">
 				<div class="project-text">
-					<p class="project-title">ToolSwap</p>
+					<p class="project-title"><b>ToolSwap:</b> Simplifying Neighborhood Tool Sharing</p>
 					<p>
-						Web app for scheduling a neighbourhood tool sharing! The app
-						is using React calendar for logged-in users to schedule the
-						rental. The logged in user has a full control over their
-						reservations, can add items to the databse and manage them. The
-						web site has a search bar and admin section to control the tool flow,
-						categories and groups.
+						ToolSwap is a web app designed for effortless neighborhood tool sharing. Utilizing React calendar, users can
+						easily schedule rentals, manage reservations, and add items to the database. The platform features a search bar
+						for efficient navigation and an admin section for tool flow control.
 					</p>
 					<p><b>Stack:</b> PostgreSQL, Express, React, Node </p>
 				</div>
@@ -343,11 +340,11 @@ if (!function_exists('cww_portfolio_gallery')):
 			</div>
 			<div class="project">
 				<div class="project-text">
-					<p class="project-title">Scheduler</p>
+					<p class="project-title"><b>Scheduler:</b> Seamless Technical Interview Management</p>
 					<p>
-						Schedule, edit and delete technical interviews. The calendar side-bar updates the amount of remaining spots
-						automatically based on the bookings. The app has thoroughly tested with multiple testing frameworks and deployed
-						with Heroku and Netlify.
+						Effortlessly schedule, edit, and delete technical interviews with our intuitive Scheduler. The calendar side-bar
+						dynamically updates remaining spots based on bookings. Rigorously tested with multiple frameworks, the app is
+						deployed on Heroku and Netlify.
 					</p>
 					<p><b>Stack:</b> Express, SQL, Node, React, Cypress, Jest, StoryBook</p>
 				</div>
@@ -360,11 +357,11 @@ if (!function_exists('cww_portfolio_gallery')):
 			</div>
 			<div class="project">
 				<div class="project-text">
-					<p class="project-title">WikiMaps</p>
+					<p class="project-title"><b>WikiMaps:</b> Mapping Stories, One Pin at a Time</p>
 					<p>
-						The app uses open-source JavaScript library Leaflet for interactive maps. Interactive resources to create maps
-						with markers pointing to locations based on the longitude and latitude.
-						User's profile holds information on the maps created by a user and pins they have added to any map.
+						WikiMaps leverages the open-source JavaScript library Leaflet, providing an interactive platform to create maps
+						with markers based on longitude and latitude. Users can track their contributions through profiles, showcasing
+						maps created and pins added.
 					</p>
 					<p><b>Stack:</b> Express, Node.js, PostgreSQL, HTML, CSS</p>
 				</div>
@@ -377,12 +374,11 @@ if (!function_exists('cww_portfolio_gallery')):
 			</div>
 			<div class="project">
 				<div class="project-text">
-					<p class="project-title">Tweeter</p>
+					<p class="project-title"><b>Tweeter:</b> Your Mini Twitter Experience</p>
 					<p>
-						Tweeter is a single-page Twitter clone, it uses Ajax to provide a real time update the page with user submitted
-						tweets. The page events are handled with jQuery; the design is powered with HTML + CSS with an emphasis on
-						mobile
-						responsiveness.
+						Tweeter, a single-page Twitter clone, employs Ajax for real-time updates with user-submitted tweets. Page events
+						are seamlessly handled through jQuery, while the design, prioritizing mobile responsiveness, is powered by HTML
+						and CSS.
 					</p>
 					<p><b>Stack:</b> AJAX, jQuery, HTML+CSS, EJS, Express</p>
 				</div>
