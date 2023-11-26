@@ -1946,38 +1946,38 @@ h1.site-title {
 
     .project:nth-child(odd) {
         flex-direction: row-reverse;
-        /* margin-right: 2%; */
-    }
+        /* margin-right: 2%;
+}
 
-    /* .video:nth-child(odd) {
+*/
+        /* .video:nth-child(odd) {
         margin: 0 0 0 0;
     } */
 
-    /* .project-text:nth-child(odd) {
-        margin-right: 2%;
-        border: 1px red solid;
+        /* .project-text:nth-child(even) {
+        margin-left: 2%;
     } */
 
-    .project-text {
-        width: 50%;
-        /* margin-right: 2%; */
-        border: 1px red solid;
+        .project-text {
+            width: 50%;
+            /* margin-right: 2%; */
+            border: 1px red solid;
+        }
+
+        .video {
+            width: 50%;
+            border: 1px black solid;
+            justify-content: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .project-title {
+            font-size: x-large;
+        }
     }
 
-    .video {
-        width: 50%;
-        border: 1px black solid;
-        justify-content: center;
-    }
-
-    iframe {
-        width: 100%;
-        height: 100%;
-    }
-
-    .project-title {
-        font-size: x-large;
-    }
-}
-
-;
+    ;
