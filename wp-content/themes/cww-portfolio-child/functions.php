@@ -6,7 +6,25 @@
  *
  * @package CWW_Portfolio
  */
+//
+function enqueue_bootstrap()
+{
+	// Enqueue Bootstrap CSS
+	wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css', array(), '5.3.2');
 
+	// Enqueue Bootstrap JS and Popper.js (required for Bootstrap dropdowns)
+	wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js', array('jquery'), '2.10.2', true);
+	wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery', 'popper'), '5.3.2', true);
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_bootstrap');
+function enqueue_child_theme_styles()
+{
+	wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+}
+add_action('wp_enqueue_scripts', 'enqueue_child_theme_styles');
+
+//
 add_action('wp_enqueue_scripts', 'cww_portfolio_child_enqueue_styles');
 function my_theme_enqueue_styles()
 {

@@ -165,24 +165,22 @@ if (!function_exists('cww_portfolio_about')):
 		?>
 		<section id="cww-about-section" class="cww-about-section">
 			<div class="container">
-				<div class="left-wrapp">
-					<div class="img-wrapp">
-						<img src="<?php echo esc_url($cww_about_image) ?>" alt="<?php the_title_attribute() ?>">
-					</div>
+
+			</div>
+			<div class="right-wrapp">
+				<div class="section-title-wrapp">
+					<h3>
+						<?php echo esc_html($cww_about_title); ?>
+						<p>Hi I am karo, test is working?</p>
+					</h3>
+					<p>
+						<?php echo esc_html($cww_about_sub_title); ?>
+					</p>
 				</div>
-				<div class="right-wrapp">
-					<div class="section-title-wrapp">
-						<h3>
-							<?php echo esc_html($cww_about_title); ?>
-						</h3>
-						<p>
-							<?php echo esc_html($cww_about_sub_title); ?>
-						</p>
-					</div>
-					<div class="desc-wrapp">
-						<?php echo wp_kses_post($customizer_page_editor); ?>
-					</div>
-					<!-- <div class="counter-wrapp cww-flex">
+				<div class="desc-wrapp">
+					<?php echo wp_kses_post($customizer_page_editor); ?>
+				</div>
+				<!-- <div class="counter-wrapp cww-flex">
 						<?php if ($cww_about_counter_value_first): ?>
 						<div class="count-item-wrapp">
 							<div class="count-val"><?php echo esc_html($cww_about_counter_value_first); ?></div>
@@ -198,7 +196,7 @@ if (!function_exists('cww_portfolio_about')):
 					<?php endif; ?>
 
 					</div> -->
-				</div>
+			</div>
 			</div>
 		</section>
 		<?php
@@ -491,7 +489,6 @@ if (!function_exists('cww_portfolio_blog')):
 	}
 endif;
 
-
 /**
  * Contact Section
  *
@@ -531,6 +528,7 @@ if (!function_exists('cww_portfolio_contact')):
 				</div>
 
 				<div class="contact-wrapp cww-flex">
+					<i class="bi bi-github"></i>
 					<div class="form-wrapp">
 						<?php echo do_shortcode($cww_contact_shortcode); ?>
 					</div>
