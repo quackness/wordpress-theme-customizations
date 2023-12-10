@@ -339,6 +339,70 @@ if (!function_exists('cww_portfolio_gallery')):
 	}
 endif;
 
+/**
+ * Card Trick  section
+ *
+ */
+add_action('cww_portfolio_home', 'card_trick', 50);
+if (!function_exists('card_trick')):
+	function card_trick()
+	{
+
+		ini_set('display_errors', 1);
+		ini_set('display_startup_errors', 1);
+		error_reporting(E_ALL);
+		$default = cww_portfolio_customizer_defaults();
+		$cww_card_trick_enable = get_theme_mod('cww_card_trick_enable', $default['cww_card_trick_enable']);
+		$cww_card_trick_post = get_theme_mod('cww_card_trick_post', $default['cww_card_trick_post']);
+		$cww_card_trick_title = get_theme_mod('cww_card_trick_title', $default['cww_card_trick_title']);
+		$cww_card_trick_sub_title = get_theme_mod('cww_card_trick_sub_title', $default['cww_card_trick_sub_title']);
+
+		if ($cww_card_trick_enable == 0) {
+			return;
+		}
+
+		if (!$cww_card_trick_post) {
+			return;
+		}
+
+		wp_print_styles(array('magnific-popup'));
+		wp_print_scripts(array('jquery-magnific-popup'));
+
+		?>
+		<section id="cww-draw-a-card-section" class="">
+			<div class="container">
+				<div class="section-titles-wrapper">
+					<div class="section-title-wrapp">
+						<h3>
+							<?php echo esc_html($cww_card_trick_title); ?>
+						</h3>
+						<p>
+							<?php echo esc_html($cww_card_trick_sub_title); ?>
+						</p>
+					</div>
+				</div>
+				<?php
+				$args = array(
+					'post_type' => 'page',
+					'page_id' => $cww_card_trick_post
+				);
+
+				$qry = new WP_Query($args);
+				if ($qry->have_posts()):
+					while ($qry->have_posts()) {
+						$qry->the_post();
+						the_content();
+					}
+					wp_reset_postdata();
+				endif;
+
+				?>
+			</div>
+		</section>
+		<?php
+	}
+endif;
+
 
 /**
  * CTA section

@@ -239,12 +239,28 @@ function cww_portfolio_scripts()
 
 
 	wp_enqueue_script('cww-portfolio', get_theme_file_uri('/assets/js/cww-portfolio.js'), array(), CWW_PORTFOLIO_VER, true);
+	//wp_enqueue_script('tell-my-fortune', get_stylesheet_directory_uri() . '/app.js', array('strategy' => 'async'), null, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
 }
 add_action('wp_enqueue_scripts', 'cww_portfolio_scripts');
+
+/**
+ * attempt to include js, also in 242
+ */
+
+function enqueue_fortune()
+{
+	wp_enqueue_script('tell-my-fortune', get_stylesheet_directory_uri() . '/app.js', false, array('strategy' => 'async', 'in_footer' => true));
+	/*wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery', 'popper'), '5.3.2', true);
+	 */
+}
+add_action('wp_enqueue_scripts', 'enqueue_fortune');
+
+
+
 
 /**
  * Admin scripts
@@ -256,6 +272,8 @@ function cww_portfolio_admin_scripts()
 
 }
 add_action('admin_enqueue_scripts', 'cww_portfolio_admin_scripts');
+
+
 
 /**
  * Implement the Custom Header feature.
