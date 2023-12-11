@@ -38,7 +38,7 @@ if($already_had_onboarding == false ){
     update_option( 'elementor_onboarded', true );
 }
 
-$cww_companion_th       = array('cww-portfolio','uportfolio');
+$cww_companion_th       = array('cww-portfolio','uportfolio','cww-portfolio-child');
 $cww_companion_active_theme   = wp_get_theme();
 if ( in_array($cww_companion_active_theme->template,$cww_companion_th) ) {
     require CWW_COMP_PATH. '/inc/customizer/cww-portfolio/home-settings/main-banner.php';
