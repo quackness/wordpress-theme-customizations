@@ -254,7 +254,7 @@ add_action('wp_enqueue_scripts', 'cww_portfolio_scripts');
 function enqueue_fortune()
 {
 	wp_enqueue_script('tell-my-fortune', get_stylesheet_directory_uri() . '/app.js', false, array('strategy' => 'async', 'in_footer' => true));
-	/*wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery', 'popper'), '5.3.2', true);
+	/*wp_enqueue_script docs https://developer.wordpress.org/reference/functions/wp_enqueue_script/;
 	 */
 }
 add_action('wp_enqueue_scripts', 'enqueue_fortune');
