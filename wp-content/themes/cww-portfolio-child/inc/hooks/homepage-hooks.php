@@ -593,9 +593,8 @@ if (!function_exists('cww_portfolio_contact')):
 
 				<div class="contact-wrapp cww-flex">
 					<i class="bi bi-github"></i>
-					<div class="form-wrapp">
-						<?php echo do_shortcode($cww_contact_shortcode); ?>
-					</div>
+
+
 					<div class="address-wrap">
 						<h4>
 							<?php echo esc_html($cww_contact_info_title); ?>

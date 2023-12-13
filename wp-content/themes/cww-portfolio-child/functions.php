@@ -259,6 +259,14 @@ function enqueue_fortune()
 }
 add_action('wp_enqueue_scripts', 'enqueue_fortune');
 
+function enqueue_three_by_three()
+{
+	wp_enqueue_script('three_by_three', get_stylesheet_directory_uri() . '/scripts/game.js', false, array('strategy' => 'async', 'in_footer' => true));
+	/*wp_enqueue_script docs https://developer.wordpress.org/reference/functions/wp_enqueue_script/;
+	 */
+}
+add_action('wp_enqueue_scripts', 'three_by_three');
+
 
 
 
