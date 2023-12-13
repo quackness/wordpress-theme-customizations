@@ -16,7 +16,7 @@ if (!function_exists('cww_portfolio_copyright')):
 		?>
 		<footer id="colophon" class="site-footer">
 			<div class="container cww-flex">
-				<?php do_action('cww_portfolio_social_icons'); ?>
+
 				<div class="site-info cww-flex">
 					<?php if ($cww_footer_text) { ?>
 						<div class="footer-copyright">
@@ -25,7 +25,7 @@ if (!function_exists('cww_portfolio_copyright')):
 					<?php } else { ?>
 						<a href="<?php echo esc_url(__('https://wordpress.org/', 'cww-portfolio')); ?>">
 							<?php
-							/* translators: %s: CMS name, i.e. WordPress. */
+							/* translators: %s: CMS name, i.e. WordPress.  removed from before 	<div class="container cww-flex"> 	<!-- <?php do_action('cww_portfolio_social_icons'); ?>	-->*/
 							printf(esc_html__(' '), 'WordPress');
 							?>
 						</a>
@@ -35,8 +35,8 @@ if (!function_exists('cww_portfolio_copyright')):
 					$cww_get_current_theme = wp_get_theme();
 
 					/* translators: 1: Theme name, 2: Theme author. 
-										printf(esc_html__(' '), '<a href="https://codeworkweb.com/themes/cww-portfolio" class="th-name">' . esc_html($cww_get_current_theme->Name) . '</a>', '<a href="https://codeworkweb.com/">Code Work Web</a>');
-										*/
+																											 printf(esc_html__(' '), '<a href="https://codeworkweb.com/themes/cww-portfolio" class="th-name">' . esc_html($cww_get_current_theme->Name) . '</a>', '<a href="https://codeworkweb.com/">Code Work Web</a>');
+																											 */
 					?>
 				</div><!-- .site-info -->
 			</div>

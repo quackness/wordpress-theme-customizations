@@ -1990,3 +1990,16 @@ h1.site-title {
 .wp-block-button a:hover {
     color: white;
 }
+
+#colophon {
+    height: 60px;
+}
+
+.desc-wrapp {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.menu-item a {
+    font-size: 25px;
+}
