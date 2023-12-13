@@ -11,7 +11,7 @@ if (!function_exists('cww_portfolio_social_icons')):
 	{
 
 		$default = cww_portfolio_customizer_defaults();
-		// $cww_icon_fb = get_theme_mod('cww_icon_fb', $default['cww_icon_fb']);
+		$cww_icon_fb = get_theme_mod('cww_icon_fb', $default['cww_icon_fb']);
 		$cww_icon_insta = get_theme_mod('cww_icon_insta', $default['cww_icon_insta']);
 		$cww_icon_twitter = get_theme_mod('cww_icon_twitter', $default['cww_icon_twitter']);
 		$cww_icon_lnkedin = get_theme_mod('cww_icon_lnkedin', $default['cww_icon_lnkedin']);
@@ -169,9 +169,8 @@ if (!function_exists('cww_portfolio_about')):
 			</div>
 			<div class="right-wrapp">
 				<div class="section-title-wrapp">
-					<h3>
+					<h3 class="text-center">
 						<?php echo esc_html($cww_about_title); ?>
-						<p>Hi I am karo, test is working?</p>
 					</h3>
 					<p>
 						<?php echo esc_html($cww_about_sub_title); ?>
@@ -591,9 +590,7 @@ if (!function_exists('cww_portfolio_contact')):
 					</div>
 				</div>
 
-				<div class="contact-wrapp cww-flex">
-					<i class="bi bi-github"></i>
-
+				<div class="contact-wrapp cww-flex text-center">
 
 					<div class="address-wrap">
 						<h4>
@@ -605,7 +602,7 @@ if (!function_exists('cww_portfolio_contact')):
 
 						<div class="address-btm">
 							<?php if ($cww_contact_address): ?>
-								<div class="location-wrapp">
+								<div>
 									<i class="fa fa-map-marker" aria-hidden="true"></i>
 									<span>
 										<?php echo esc_html($cww_contact_address); ?>
@@ -614,7 +611,7 @@ if (!function_exists('cww_portfolio_contact')):
 							<?php endif; ?>
 
 							<?php if ($cww_contact_email): ?>
-								<div class="email-wrapp">
+								<div>
 									<i class="fa fa-envelope-o" aria-hidden="true"></i>
 									<a href="mailto:<?php echo esc_attr($cww_contact_email) ?>">
 										<?php echo esc_html($cww_contact_email); ?>
@@ -623,13 +620,26 @@ if (!function_exists('cww_portfolio_contact')):
 							<?php endif ?>
 
 							<?php if ($cww_contact_mobile): ?>
-								<div class="mob-wrapp">
+								<div>
 									<i class="fa fa-mobile" aria-hidden="true"></i>
 									<a href="tel:<?php echo esc_attr($cww_contact_mobile) ?>">
 										<?php echo esc_html($cww_contact_mobile); ?>
 									</a>
 								</div>
 							<?php endif ?>
+
+							<div>
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+								<a href="https://www.linkedin.com/in/karolina-redden/">/karolinaredden</a>
+								</a>
+							</div>
+
+							<div>
+								<i class="fa fa-github" aria-hidden="true"></i>
+								<a href="https://github.com/quackness">/quackness</a>
+								</a>
+							</div>
+
 						</div>
 
 					</div>

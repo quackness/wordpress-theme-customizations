@@ -1978,3 +1978,15 @@ h1.site-title {
     color: #928383;
     /* align-items: flex-end */
 }
+
+.wp-block-button a:visited {
+    color: white;
+}
+
+.wp-block-button a:active {
+    color: white;
+}
+
+.wp-block-button a:hover {
+    color: white;
+}
