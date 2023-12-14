@@ -1,5 +1,3 @@
-console.log("testing");
-
 
 async function drawCard() {
   const response = await fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1');
@@ -26,7 +24,7 @@ async function drawCard() {
 }
 
 const message = 'Built with the Deck of Cards API, "DevCards" is a simple app for web developers, offering a modern twist on card reading.'
-
+//the strings content generated with chat gtp
 function getFortune() {
   const fortunes = [
     "You've drawn the JavaScript Card! Your logic is strong, and your functions are robust. Expect a surge in front-end opportunities.",
